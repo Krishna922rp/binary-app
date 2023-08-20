@@ -1,0 +1,258 @@
+.binary-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .tree-node {
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .selected {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  .arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: relative;
+  }
+  
+  .left {
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #ccc transparent transparent;
+    transform: translateX(-50%);
+  }
+  
+  .right {
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #ccc;
+    transform: translateX(-50%);
+  }
+  
+  .children {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .children::before,
+  .children::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .children::before {
+    left: 0;
+  }
+  
+  .children::after {
+    right: 0;
+  }
+  .arrow {
+    position: absolute;
+    height: 4px;
+    background-color: #333;
+    transform-origin: 0 0;
+  }
+  
+  .node-container {
+    position: relative;
+  }
+  
+  .binary-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .tree-node {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #b3d4fc;
+  }
+  
+  .children {
+    display: flex;
+  }
+  
+
+  .node-container .arrow {
+    margin-top: -2px;
+  }
+  .binary-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .tree-node {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .arrow {
+    margin-right: 5px;
+  }
+  
+  .children {
+    display: flex;
+  }
+  .tree-node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+  }
+  
+  .arrow {
+    margin-right: 5px;
+  }
+  
+  .binary-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .node-container {
+    display: flex;
+  }
+  
+  .children {
+    display: flex;
+  }
+  .tree-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .tree-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .value {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .arrow {
+    font-size: 20px;
+  }
+  
+  .left-arrow {
+    color: #27ae60;
+  }
+  
+  .right-arrow {
+    color: #e74c3c;
+  }
+  .binary-tree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 18px;
+  }
+  
+  .tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .node-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .tree-node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #f0f0f0;
+  }
+  
+  .arrow {
+    position: absolute;
+    left: -25px;
+    font-size: 20px;
+  }
+  
+  .children {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
